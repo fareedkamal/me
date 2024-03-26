@@ -14,7 +14,7 @@ const theme = createTheme({
 export default function RootLayout({ children }) {
   return (
     <html lang='en'>
-      <link rel='icon' type='image/svg+xml' href='/favicon.png' />
+      <link rel='icon' type='image/svg+xml' href='./favicon.png' />
       <body suppressHydrationWarning={true}>
         <ScrollToTop />
         <ThemeProvider theme={theme}>
