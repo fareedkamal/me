@@ -69,7 +69,7 @@ const Footer = () => {
                 alt=''
                 height={40}
                 width={40}
-                src='/assets/logos/linkedin.png'
+                src='/me/assets/logos/linkedin.png'
               />
               {/* <img
                 style={{
