@@ -3,29 +3,30 @@ import { Box, Typography } from '@mui/material';
 import Section from '@/components/shared/Section';
 import { styles } from '@/style/styles';
 import { useInView } from 'react-intersection-observer';
+import Image from 'next/image';
 
 const list = [
   {
     id: 1,
-    src: './icons/front-end.png',
+    src: '/icons/front-end.png',
     title: 'UI / Front-end',
     desc: 'Elevate your digital presence with captivating UI and front-end development. From sleek designs to seamless user experiences, I craft visually appealing and responsive interfaces that leave a lasting impression.',
   },
   {
     id: 2,
-    src: './icons/back-end.png',
+    src: '/icons/back-end.png',
     title: 'Database / Back-end',
     desc: 'Empower your applications with robust backend solutions. I specialize in crafting scalable databases and APIs, ensuring seamless communication between your frontend and backend systems for optimal performance and data management.',
   },
   {
     id: 3,
-    src: './icons/aws.png',
+    src: '/icons/aws.png',
     title: 'Cloud / Server',
     desc: 'Harness the power of the cloud with expert server setup. From AWS to Azure, I configure and optimize cloud environments tailored to your project needs, providing scalability, security, and reliability for your applications.',
   },
   {
     id: 4,
-    src: './icons/deployment.png',
+    src: '/icons/deployment.png',
     title: 'Deployment',
     desc: 'I offer end-to-end support. From routine maintenance to streamlined product shipping and deployment processes, I ensure your applications run smoothly, allowing you to focus on your core business while I handle the technical intricacies.',
   },
@@ -71,7 +72,7 @@ const Skills = () => {
               }}
             >
               <div className='icon-wrapper'>
-                <img className='skill-icon' alt='' src={item.src} />
+                <Image src={item.src} alt='' height={40} width={40} />
               </div>
               <Typography
                 mt={3}

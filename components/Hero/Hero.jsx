@@ -6,6 +6,7 @@ import { styles } from '@/style/styles';
 import './styles.css';
 import { useInView } from 'react-intersection-observer';
 import Link from 'next/link';
+import image from '@/public/assets/profile_2.png';
 
 const Hero = () => {
   const [ref, inView] = useInView({
@@ -120,7 +121,7 @@ const Hero = () => {
               height={{ sm: '300px', xs: '200px' }}
               width={{ sm: '300px', xs: '200px' }}
               borderRadius='100%'
-              src='./assets/profile_2.png'
+              src='/assets/profile_2.png'
               sx={{
                 objectFit: 'contain',
                 zIndex: 1,
