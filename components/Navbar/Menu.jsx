@@ -72,7 +72,7 @@ const Menu = () => {
               <Box
                 component='img'
                 sx={{ height: { sm: '40px', xs: '20px' } }}
-                src='./assets/logos/linkedin.png'
+                src='/assets/logos/linkedin.png'
               />
             </Link>
             {/* <Link
