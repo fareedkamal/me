@@ -2,32 +2,83 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+* {
+  font-family: 'Alliance No.1', sans-serif;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+.box {
+  opacity: 0;
+  transform: translateY(100%);
+  transition: all ease-in-out 1s;
+}
+.animate {
+  opacity: 1;
+  transform: translateY(0); /* Move the box to its original position (0%) */
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.left {
+  opacity: 0;
+  transform: translateX(-100%);
+  transition: all ease-in-out 1s;
+}
+.left-animate {
+  opacity: 1;
+  transform: translateX(0); /* Move the box to its original position (0%) */
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.right {
+  opacity: 0;
+  transform: translateX(100%);
+  transition: all ease-in-out 1s;
+}
+.right-animate {
+  opacity: 1;
+  transform: translateX(0); /* Move the box to its original position (0%) */
+}
+
+.hero-right {
+  opacity: 0;
+  right: 100%;
+  transition: all ease-in-out 1.5s;
+}
+
+.hero-right-animate {
+  opacity: 1;
+  right: 18em;
+}
+
+.hover-style:hover {
+  background-color: #ff6334f5;
+  width: fit-content;
+  padding-left: 1em;
+  padding-right: 1em;
+  transform: translateX(24px);
+}
+
+.hover-wrapper:hover .hover-style {
+  transition: all ease-in-out 0.1s;
+}
+
+.hero-left {
+  opacity: 0;
+  left: 100%;
+  transition: all ease-in-out 1.5s;
+}
+.hero-left-animate {
+  opacity: 1;
+  left: 0;
+}
+
+.icon-wrapper {
+  height: 60px;
+  width: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #40424f;
+  border-radius: 10px;
+}
+
+.skill-icon {
+  width: 60%;
 }

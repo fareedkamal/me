@@ -1,0 +1,82 @@
+.menu-wrapper {
+  position: relative;
+}
+
+.menu-blur-bg {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background-color: #00000075;
+  backdrop-filter: blur(15px);
+  z-index: -1;
+}
+
+.menu {
+  height: 0;
+  width: 0;
+  position: absolute;
+  right: 0;
+  opacity: 0;
+  z-index: -1;
+  top: 0;
+  transition: all ease-in 0.2s;
+}
+
+.menu.menu-active {
+  height: 500px;
+  width: 400px;
+  opacity: 1;
+  transition: all ease-in 0.2s;
+}
+
+.menu-button {
+  height: 60px;
+  width: 60px;
+  border-radius: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.line {
+  height: 3px;
+  background-color: white;
+  width: 60%;
+  transition: all ease 0.3s;
+}
+
+.line-1-animate {
+  transform: rotate(45deg) translate(5px, 6px);
+  transition: all ease 0.3s;
+  width: 60%;
+}
+
+.line-2-animate {
+  transform: rotate(-45deg) translate(3px, -3px);
+  transition: all ease 0.3s;
+  width: 60%;
+}
+
+@media (max-width: 425px) {
+  .menu.menu-active {
+    width: 200px;
+    height: 300px;
+  }
+  .menu-button {
+    height: 30px;
+    width: 30px;
+    gap: 5px;
+  }
+  .line {
+    height: 1px;
+  }
+  .line-1-animate {
+    transform: rotate(45deg) translate(10px, 10px);
+  }
+  .line-2-animate {
+    transform: rotate(-45deg) translate(-6px, 6px);
+  }
+}
