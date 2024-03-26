@@ -1,7 +1,5 @@
 import { Box, Stack, Typography } from '@mui/material';
 import { styles } from '@/style/styles';
-import linkedinLogo from '@/assets/logos/linkedin.png';
-import upworkLogo from '@/assets/logos/upwork.png';
 import Section from '@/components/shared/Section';
 import Link from 'next/link';
 import Image from 'next/image';
@@ -67,7 +65,12 @@ const Footer = () => {
           </Typography>
           <Stack direction={'row'} spacing={5} alignItems={'center'}>
             <Link target='_blank' href='https://linkedin.com/in/fareedkamal'>
-              <Image alt='' height={40} width={40} src={linkedinLogo} />
+              <Image
+                alt=''
+                height={40}
+                width={40}
+                src='/assets/logos/linkedin.png'
+              />
               {/* <img
                 style={{
                   height: '35px',
