@@ -38,6 +38,7 @@ const Menu = () => {
         >
           <Stack spacing={2}>
             <Link
+              onClick={() => setIsMenuOpen(!isMenuOpen)}
               href='/work'
               style={{ textDecoration: 'none', color: 'white' }}
             >
@@ -45,6 +46,7 @@ const Menu = () => {
             </Link>
             <Link
               href='/resume'
+              onClick={() => setIsMenuOpen(!isMenuOpen)}
               style={{ textDecoration: 'none', color: 'white' }}
             >
               <Typography fontSize={styles.fontSize.md}>My Resume</Typography>
@@ -55,6 +57,7 @@ const Menu = () => {
               SAY HELLO
             </Typography>
             <Typography
+              onClick={() => setIsMenuOpen(!isMenuOpen)}
               color={'white'}
               component={'a'}
               href='mailto:fareedkamal.dev@gmail.com'
@@ -68,7 +71,11 @@ const Menu = () => {
             </Typography>
           </Stack>
           <Stack direction={'row'} spacing={5} alignItems={'center'}>
-            <Link target='_blank' href='https://linkedin.com/in/fareedkamal'>
+            <Link
+              onClick={() => setIsMenuOpen(!isMenuOpen)}
+              target='_blank'
+              href='https://linkedin.com/in/fareedkamal'
+            >
               <Box
                 component='img'
                 sx={{ height: { sm: '40px', xs: '20px' } }}
