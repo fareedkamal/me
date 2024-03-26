@@ -3,7 +3,6 @@ import { Box, Typography } from '@mui/material';
 import Section from '@/components/shared/Section';
 import { styles } from '@/style/styles';
 import { useInView } from 'react-intersection-observer';
-import Image from 'next/image';
 
 const list = [
   {
@@ -72,7 +71,7 @@ const Skills = () => {
               }}
             >
               <div className='icon-wrapper'>
-                <Image src={item.src} alt='' height={40} width={40} />
+                <img src={item.src} alt='' />
               </div>
               <Typography
                 mt={3}
