@@ -2,7 +2,6 @@ import { Box, Stack, Typography } from '@mui/material';
 import { styles } from '@/style/styles';
 import Section from '@/components/shared/Section';
 import Link from 'next/link';
-import Image from 'next/image';
 
 const Footer = () => {
   return (
@@ -65,12 +64,7 @@ const Footer = () => {
           </Typography>
           <Stack direction={'row'} spacing={5} alignItems={'center'}>
             <Link target='_blank' href='https://linkedin.com/in/fareedkamal'>
-              <Image
-                alt=''
-                height={40}
-                width={40}
-                src='/me/assets/logos/linkedin.png'
-              />
+              <img className='h-[35px]' src='/me/assets/logos/linkedin.png' />
               {/* <img
                 style={{
                   height: '35px',

@@ -71,7 +71,7 @@ const Skills = () => {
               }}
             >
               <div className='icon-wrapper'>
-                <img src={item.src} alt='' />
+                <img src={item.src} alt='' width={'70%'} />
               </div>
               <Typography
                 mt={3}
