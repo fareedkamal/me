@@ -120,7 +120,7 @@ const Hero = () => {
               height={{ sm: '300px', xs: '200px' }}
               width={{ sm: '300px', xs: '200px' }}
               borderRadius='100%'
-              src='/assets/profile_2.png'
+              src='/me/assets/profile_2.png'
               sx={{
                 objectFit: 'contain',
                 zIndex: 1,
