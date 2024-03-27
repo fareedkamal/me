@@ -266,7 +266,10 @@ const NewsletterApp = () => {
           </Box>
 
           <Stack direction={'row'} spacing={2}>
-            <Link href='/work/crm-dashboard' style={{ textDecoration: 'none' }}>
+            <Link
+              href='/work/gmail-declutter-app'
+              style={{ textDecoration: 'none' }}
+            >
               <Box
                 sx={{
                   bgcolor: '#3453ff',
