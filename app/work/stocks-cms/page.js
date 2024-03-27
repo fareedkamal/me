@@ -4,6 +4,10 @@ import { styles } from '@/style/styles';
 import { ArrowBack } from '@mui/icons-material';
 import Link from 'next/link';
 
+export const metadata = {
+  title: 'Stocks CMS | Work',
+};
+
 const tech = [
   'React.js',
   'Material UI',

@@ -4,6 +4,10 @@ import { styles } from '@/style/styles';
 import Link from 'next/link';
 import { ArrowBack } from '@mui/icons-material';
 
+export const metadata = {
+  title: 'CRM Dashboard | Work',
+};
+
 const tech = ['React.js', 'Material UI'];
 
 const Page = () => {
