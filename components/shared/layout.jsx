@@ -11,7 +11,6 @@ const Layout = ({ children }) => {
         width: '100%',
         display: 'flex',
         flexDirection: 'column',
-        bgcolor: styles.newPallette[0],
       }}
     >
       <Navbar />

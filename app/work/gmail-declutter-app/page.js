@@ -1,18 +1,18 @@
 import { Box, Divider, Typography } from '@mui/material';
 import Section from '@/components/shared/Section';
 import { styles } from '@/style/styles';
-import { ArrowBack } from '@mui/icons-material';
 import Link from 'next/link';
+import { ArrowBack } from '@mui/icons-material';
 
 const tech = [
   'React.js',
+  'Next.js',
   'Material UI',
-  'Ag Grid',
-  'CK Editor',
+  'Tailwind CSS',
   'Node.js',
   'My SQL',
-  'Stripe',
-  'AWS',
+  'Google Cloud Platform',
+  'Full Stack Development',
   'SaaS',
 ];
 
@@ -29,9 +29,8 @@ const Page = () => {
         <Link href='/work'>
           <ArrowBack sx={{ color: 'white', cursor: 'pointer' }} />
         </Link>
-
         <Typography mb={1} color={'white'} fontSize={styles.fontSize.xlg}>
-          CMS for Equity Research
+          Gmail Declutter App
         </Typography>
 
         <div className='mb-4 flex flex-wrap gap-4'>
@@ -51,26 +50,25 @@ const Page = () => {
             color={styles.newPallette[2]}
             fontSize={styles.fontSize.md}
           >
-            It is a web platform that streamlines stock analysis and providing
-            convenient access to comprehensive reports from the Oslo Stock
-            Exchange. The focus was on enhancing the user experience through a
-            dedicated web portal, reducing reliance on email notifications for
-            report access.
+            This app serves as a newsletter aggregator, offering convenient
+            access to subscribed newsletters and personalized email content.
+            Users can explore popular newsletter topics, bookmark interesting
+            articles, and benefit from a streamlined platform for managing their
+            email subscriptions.
             <br />
             <br />
-            Requirements: The client required a sophisticated solution,
-            featuring a user-friendly web portal, streamlined subscription
-            management, exclusive stock insights, and seamless Stripe
-            integration for secure payment processing. Additionally, an
-            administrative interface was needed for user management, report
-            uploads, and subscription-related tasks.
+            Requirements: Client required solution for an app that provides a
+            dedicated feed for all subscribed newsletters, includes a discovery
+            section to explore trending newsletter topics, and incorporates
+            features such as bookmarking and content scraping from various
+            sources.
             <br />
             <br />
-            Solution: I developed a custom platform that included a seamless
-            user authentication flow, an intuitive admin dashboard for efficient
-            management, Stripe integration for secure transactions, a secure
-            system for report uploads, and a comprehensive database management
-            system
+            Solution: I successfully delivered a custom web application
+            featuring Google authentication to access emails and identify
+            subscribed newsletters. The design prioritizes a modern and
+            user-friendly experience, and the app operates on a SaaS model,
+            offering premium features to enhance the overall user experience.
           </Typography>
         </Box>
         {images.map((img) => (
@@ -82,7 +80,6 @@ const Page = () => {
               width: '100%',
               objectFit: 'cover',
               objectPosition: 'top',
-              mb: 5,
             }}
           />
         ))}
@@ -92,14 +89,9 @@ const Page = () => {
 };
 
 const images = [
-  '/me/work/stocks-cms/1.png',
-  '/me/work/stocks-cms/2.png',
-  '/me/work/stocks-cms/3.png',
-  '/me/work/stocks-cms/4.png',
-  '/me/work/stocks-cms/5.png',
-  '/me/work/stocks-cms/6.png',
-  '/me/work/stocks-cms/7.png',
-  '/me/work/stocks-cms/8.png',
+  '/me/work/newsletter/feed-desktop.png',
+  '/me/work/newsletter/newsletter-page.png',
+  '/me/work/newsletter/dark-mode.png',
 ];
 
 export default Page;
