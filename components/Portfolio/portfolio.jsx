@@ -1,7 +1,6 @@
 import { Box, Stack, Typography } from '@mui/material';
 import Section from '@/components/shared/Section';
 import { styles } from '@/style/styles';
-import { Star } from '@mui/icons-material';
 import Link from 'next/link';
 
 const Portfolio = () => {

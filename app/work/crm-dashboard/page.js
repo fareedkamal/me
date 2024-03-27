@@ -1,4 +1,4 @@
-import { Box, Divider, Typography } from '@mui/material';
+import { Box, Typography } from '@mui/material';
 import Section from '@/components/shared/Section';
 import { styles } from '@/style/styles';
 import Link from 'next/link';
